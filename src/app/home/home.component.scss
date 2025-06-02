@@ -1,0 +1,199 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  background-color: #f3f3f3; /* Light Windows-style background */
+  border-radius: 10px; /* Rounded corners for the container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+ 
+ 
+}
+
+.typing-effect {
+height:8rem;
+  display: inline-block;
+  position: relative;
+}
+
+.typing-effect h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  visibility: hidden; /* Initially hide the headings */
+
+}
+
+.typing-effect h1.visible {
+  visibility: visible; /* Show the heading when it starts typing */
+}
+
+.typing-effect-heading {
+ 
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #0078d7;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  visibility: hidden;
+}
+
+.typing-effect-heading.visible {
+  visibility: visible;
+}
+
+#line2.typing-effect-heading.visible::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #0078d7;
+  margin-left: 4px;
+  animation: blink 0.8s steps(1) infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.intro-text {
+  display: inline-flex;
+  gap:0.2em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #0078d7; /* Slightly lighter text for the intro */
+}
+
+.action-buttons {
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn {
+  background-color: #0078d7; /* Windows blue */
+  color: #ffffff;
+}
+
+.resume-btn:hover {
+  background-color: #005a9e; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.contact-btn {
+  background-color: #ffffff;
+  color: #0078d7;
+  border: 2px solid #0078d7;
+}
+
+.contact-btn:hover {
+  background-color: #0078d7;
+  color: #ffffff;
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.social-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icons a {
+  color: #0078d7;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0078d7; /* Windows blue hover effect */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+@media (max-width: 900px) {
+
+
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .typing-effect h1 {
+    font-size: 2rem;
+  }
+  
+
+  .angular-link {
+  display: flex;
+  align-items: center; // Center logo and text vertically
+  justify-content: center;
+  
+}
+}
+
+@media (max-width: 600px) {
+  
+  .home-container {
+    gap:0.2rem;
+   
+  }
+  .typing-effect h1 {
+    font-size: 1.8rem;
+  }
+  .intro-text {
+    font-size: 1rem;
+  }
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.1rem;
+  }.social-icons a {
+    font-size: 1.5rem;
+  }
+
+
+
+
+  .action-buttons {
+    gap: 0.7rem;
+  }
+}
+
+.angular-link {
+  display: inline-flex;
+  align-items: center; // Center logo and text vertically
+  text-decoration: none;
+}
+
+.angular-logo {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+ 
+
+  margin-top: 0.2em;;
+}
+
+.angular-rest {
+  color: #dd0031;
+  font-weight: bold;
+ 
+}

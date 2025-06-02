@@ -1,0 +1,25 @@
+<div class="project-container">
+  <h1 class="project-heading">My Projects</h1>
+  <div class="row">
+    <!-- Project Cards -->
+    <div
+      class="project-card"
+      *ngFor="let project of projects; let i = index"
+    >
+      <img [src]="project.image" alt="{{ project.name }}" />
+      <h3>{{ project.name }}</h3>
+      <div class="buttons">
+        <!-- Show buttons for the first project -->
+        <div class="buttons" *ngIf="i === 0">
+          <a [href]="project.link" target="_blank" class="project-btn">Visit Project</a>
+          <a *ngIf="project.github" [href]="project.github" target="_blank" class="github-btn">GitHub</a>
+        </div>
+        <!-- Show "Work in Progress" for other projects -->
+        <div *ngIf="i !== 0" class="work-in-progress">
+          <span>Work in Progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

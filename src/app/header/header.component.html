@@ -1,0 +1,36 @@
+<nav>
+  <div class="logo windows-logo-sj">
+    <img src="assets/header/logo.png" alt="Logo" />
+  </div>
+  <!-- Menu Toggle Button -->
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <div class="windows-logo">
+      <span class="square top-left"></span>
+      <span class="square top-right"></span>
+      <span class="square bottom-left"></span>
+      <span class="square bottom-right"></span>
+    </div>
+  </button>
+  <!-- Navigation Links -->
+  <div class="nav-links" [class.active]="menuOpen">
+    <a routerLink="/home" (click)="closeMenu()" title="Home">
+      <fa-icon [icon]="faHome"></fa-icon>
+    </a>
+    <a routerLink="/about" (click)="closeMenu()" title="About">
+      <fa-icon [icon]="faUser"></fa-icon>
+    </a>
+    <a routerLink="/project" (click)="closeMenu()" title="Projects">
+      <fa-icon [icon]="faProjectDiagram"></fa-icon>
+    </a>
+ 
+    <a routerLink="/skills" (click)="closeMenu()" title="Skills">
+      <fa-icon [icon]="faLaptopCode"></fa-icon>
+    </a>
+    <a routerLink="/contact" (click)="closeMenu()" title="Contact">
+      <fa-icon [icon]="faEnvelope"></fa-icon>
+    </a>
+  </div>
+  <button class="dark-mode-toggle" (click)="toggleDarkMode()">
+    <fa-icon [icon]="isDarkMode ? faSun : faMoon"></fa-icon>
+  </button>
+</nav>

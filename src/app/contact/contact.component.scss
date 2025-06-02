@@ -1,0 +1,107 @@
+.contact-container {
+  max-width: 600px;
+ margin: 0 auto; // Center the container
+  padding: 2rem;
+  background-color: #f3f3f3; // Light Windows-style background
+  border-radius: 10px; // Rounded corners
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  text-align: center;
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Stack elements vertically
+  justify-content: center; // Center content vertically
+  align-items: center; // Center content horizontally
+
+  gap: 2rem; // Space between elements
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; // Space between form groups
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem; // Space between Name and Email fields
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex: 1; // Ensures both Name and Email fields take equal width
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333; // Dark text color
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px; // Rounded corners
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0078d7; // Windows blue border on focus
+  box-shadow: 0 0 4px rgba(0, 120, 215, 0.5); // Subtle blue glow
+}
+
+.submit-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px; // Rounded corners
+  background-color: #0078d7; // Windows blue
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #005a9e; // Darker blue on hover
+  transform: scale(1.05); // Slight zoom effect
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  min-height: 1.2em; // Always reserve space for one line of error text
+  margin-top: 0.5rem;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+
+  .submit-btn {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.1rem;
+  }
+
+  .error {
+    font-size: 0.85rem;
+  }
+}
+

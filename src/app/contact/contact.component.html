@@ -1,0 +1,52 @@
+<div class="contact-container">
+  <h1>Contact Me</h1>
+  <form (submit)="onSubmit($event)">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          [(ngModel)]="formData.name"
+          name="name"
+          required
+        />
+        <div class="error">
+          {{ (submitted && !formData.name) ? 'Name is required.' : '\u00A0' }}
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          [(ngModel)]="formData.email"
+          name="email"
+          required
+        />
+        <div class="error">
+          {{ (submitted && !formData.email) ? 'A valid email is required.' : '\u00A0' }}
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        rows="5"
+        placeholder="Enter your message"
+        [(ngModel)]="formData.message"
+        name="message"
+        required
+      ></textarea>
+      <div class="error">
+        {{ (submitted && !formData.message) ? 'Message is required.' : '\u00A0' }}
+      </div>
+    </div>
+    <button type="submit" class="submit-btn">
+      Submit
+    </button>
+  </form>
+</div>

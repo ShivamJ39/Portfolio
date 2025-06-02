@@ -1,0 +1,15 @@
+<div class="skills-container">
+  <h1 class="skills-heading">My Skills</h1> <!-- Added heading -->
+  
+  <!-- First Row -->
+  <div class="row">
+    <div class="skill-card" *ngFor="let skill of skills.slice(0, skills.length / 1)">
+      <img [src]="skill.image" alt="{{ skill.name }}" />
+      <h3>{{ skill.name }}</h3>
+    </div>
+  </div>
+
+  
+  <!-- Second Row -->
+  
+</div>
