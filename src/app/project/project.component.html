@@ -14,6 +14,10 @@
           <a [href]="project.link" target="_blank" class="project-btn">Visit Project</a>
           <a *ngIf="project.github" [href]="project.github" target="_blank" class="github-btn">GitHub</a>
         </div>
+         <div class="buttons" *ngIf="i === 0">
+          <a [href]="project.link" target="_blank" class="project-btn">Visit Project</a>
+          <a *ngIf="project.github" [href]="project.github" target="_blank" class="github-btn">GitHub</a>
+        </div>
         <!-- Show "Work in Progress" for other projects -->
         <div *ngIf="i !== 0" class="work-in-progress">
           <span>Work in Progress</span>
