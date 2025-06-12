@@ -10,7 +10,7 @@
       <h3>{{ project.name }}</h3>
       <div class="buttons">
         <!-- Show buttons for the first project -->
-        <div class="buttons" *ngIf="i === 0">
+        <div class="buttons" *ngIf="i === 1">
           <a [href]="project.link" target="_blank" class="project-btn">Visit Project</a>
           <a *ngIf="project.github" [href]="project.github" target="_blank" class="github-btn">GitHub</a>
         </div>
