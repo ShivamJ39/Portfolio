@@ -17,7 +17,7 @@ export class ProjectComponent {
       name: 'Portfolio',
       image: 'assets/projects/projects.jpg',
       description: 'This is a description for Project 1.',
-      link: 'https://example.com/project1',
+      link: 'https://shivamj-portfolio.netlify.app',
       github: 'https://github.com/example/project1'
     },
 
@@ -44,7 +44,7 @@ export class ProjectComponent {
       name: 'Task Manager',
       image: 'assets/projects/projects.jpg',
       description: 'This is a description for Project 2.',
-      link: 'https://example.com/project2',
+      link: 'https://task-manager-sj.netlify.app',
       github: 'https://github.com/example/project2'
     },
     {
