@@ -7,6 +7,8 @@
   border-radius: 10px; // Rounded corners for the container
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  padding:1rem;
+  min-height:100vh;
+  padding-top:10vh;
 }
 
 .about-heading {
