@@ -1,17 +1,17 @@
 .contact-container {
   max-width: 600px;
- margin: 0 auto; // Center the container
+ margin: 0 auto; 
   padding: 2rem;
-  background-color: #f3f3f3; // Light Windows-style background
-  border-radius: 10px; // Rounded corners
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  background-color: #f3f3f3; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  display: flex; // Use flexbox for layout
-  flex-direction: column; // Stack elements vertically
-  justify-content: center; // Center content vertically
-  align-items: center; // Center content horizontally
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
 
-  gap: 2rem; // Space between elements
+  gap: 2rem; 
 
 
 
@@ -30,32 +30,32 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; // Space between form groups
+  gap: 1.5rem; 
 }
 
 .form-row {
   display: flex;
-  gap: 1.5rem; // Space between Name and Email fields
+  gap: 1.5rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   text-align: left;
-  flex: 1; // Ensures both Name and Email fields take equal width
+  flex: 1; 
 }
 
 label {
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #333; // Dark text color
+  color: #333; 
 }
 
 input,
 textarea {
   padding: 0.8rem;
   border: 1px solid #ccc;
-  border-radius: 5px; // Rounded corners
+  border-radius: 5px; 
   font-size: 1rem;
   width: 100%;
   box-sizing: border-box;
@@ -65,30 +65,30 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #0078d7; // Windows blue border on focus
-  box-shadow: 0 0 4px rgba(0, 120, 215, 0.5); // Subtle blue glow
+  border-color: #0078d7; 
+  box-shadow: 0 0 4px rgba(0, 120, 215, 0.5); 
 }
 
 .submit-btn {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border: none;
-  border-radius: 5px; // Rounded corners
-  background-color: #0078d7; // Windows blue
+  border-radius: 5px; 
+  background-color: #0078d7; 
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .submit-btn:hover {
-  background-color: #005a9e; // Darker blue on hover
-  transform: scale(1.05); // Slight zoom effect
+  background-color: #005a9e; 
+  transform: scale(1.05);
 }
 
 .error {
   color: red;
   font-size: 0.9rem;
-  min-height: 1.2em; // Always reserve space for one line of error text
+  min-height: 1.2em; 
   margin-top: 0.5rem;
   display: block;
 }
