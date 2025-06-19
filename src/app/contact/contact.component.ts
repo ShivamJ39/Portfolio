@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule], // Add necessary imports
+  imports: [FormsModule, CommonModule], 
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
@@ -20,28 +20,28 @@ export class ContactComponent {
   submitted = false;
 
   onSubmit(event: Event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault();
     this.submitted = true;
 
-    // Check if all fields are filled
+   
     if (this.formData.name && this.formData.email && this.formData.message) {
-      // Send email using EmailJS
+     
       emailjs
         .send(
-          'service_ptyea6q', // Replace with your EmailJS Service ID
-          'template_tqrs458', // Replace with your EmailJS Template ID
+          'service_ptyea6q', 
+          'template_tqrs458', 
           {
             from_name: this.formData.name,
             from_email: this.formData.email,
             message: this.formData.message
           },
-          'MPXjhIt_6gEuOlOtV' // Replace with your EmailJS Public Key
+          'MPXjhIt_6gEuOlOtV'
         )
         .then(
           (response) => {
             console.log('SUCCESS!', response.status, response.text);
             alert('Your message has been sent successfully!');
-            // Reset the form and submitted flag
+           
             this.formData = { name: '', email: '', message: '' };
             this.submitted = false;
           },
