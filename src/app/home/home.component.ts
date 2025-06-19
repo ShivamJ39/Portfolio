@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import social icons
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { Component, OnInit } from '@angular/core';
 
