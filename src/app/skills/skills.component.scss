@@ -1,13 +1,13 @@
 .skills-container {
   display: flex;
-  flex-direction: column; // Stack rows vertically
-  gap: 2rem; // Space between rows
+  flex-direction: column; 
+  gap: 2rem; 
   padding: 2rem;
-  background-color: #f3f3f3; // Light Windows-style background
-  border-radius: 10px; // Rounded corners for the container
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-  justify-content: center; // Center content vertically
-  align-items: center; // Center content horizontally
+  background-color: #f3f3f3;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  justify-content: center; 
+  align-items: center; 
   min-height:100vh;
   padding-top:10vh;
 }
@@ -16,32 +16,32 @@
   display: grid;
 
   grid-template-columns: repeat(3, 1fr); 
-  // Responsive grid for each row
-  gap: 2rem; // Space between skill cards
-  width: 100%; // Ensure the row takes full width
+  
+  gap: 2rem; 
+  width: 100%; 
  
-  position: relative; // Ensure proper layering for blur effect
+  position: relative; 
 }
 
-/* Ensure skills are distributed across two rows */
+
 
 
 .skill-card {
-  background-color: #0078d7; // Windows blue background
-  border-radius: 10px; // Rounded corners for skill cards
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  background-color: #0078d7;
+  border-radius: 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  padding: 1.5rem; // Increased padding for better spacing
+  padding: 1.5rem; 
  
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out; // Smooth hover animation
-  position: relative; // Ensure proper layering
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out; 
+  position: relative; 
   z-index: 1;
 }
 .skill-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   background-color: #005a9e;
-  z-index: 2; /* Bring the hovered card to the front */
+  z-index: 2; 
  
 }
 .skill-card img {
@@ -49,50 +49,50 @@
   height: 80px;
   object-fit: contain;
   margin-bottom: 1rem;
-  transition: transform 0.3s ease; // Smooth hover animation for the image
+  transition: transform 0.3s ease; 
 }
 .skill-card:hover img {
   transform: scale(1.1);
 }
 
 .skill-card h3 {
-  color: white; // White text for skill name
+  color: white; 
   font-size: 1.2rem;
-  font-weight: bold; // Make the skill name bold
-  transition: color 0.3s ease; // Smooth color change on hover
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
 
-/* Blur Effect for All Other Cards in the Same Row */
+
 .row:hover .skill-card {
-  filter: blur(5px); /* Blur all skill cards in the row */
+  filter: blur(5px); 
   transition: filter 0.3s ease;
 }
 
 .row:hover .skill-card:hover {
-  filter: none; /* Remove blur from the hovered skill card */
-  z-index: 2; /* Ensure the hovered card is above the blurred ones */
+  filter: none; 
+  z-index: 2; 
 }
 
-/* Blur Effect for Other Rows */
+
 .row:hover .row:not(:hover) {
-  filter: blur(5px); /* Blur all other rows */
+  filter: blur(5px); 
   transition: filter 0.3s ease;
 }
 
-/* Disable Blur for the Same Row */
+
 .row:hover {
-  filter: none; /* Ensure the hovered row is not blurred */
+  filter: none; 
 }
 @media screen and (max-width: 768px) {
   .row {
-    grid-template-columns: repeat(2, 1fr); // Two columns on smaller screens
+    grid-template-columns: repeat(2, 1fr); 
   }
   
 }
 
 @media screen and (max-width: 480px) {
   .row {
-    grid-template-columns: 1fr; // Single column on very small screens
+    grid-template-columns: 1fr; 
   }
   
 }
