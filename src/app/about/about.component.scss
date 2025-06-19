@@ -1,10 +1,10 @@
 .about-container {
   display: flex;
-  flex-direction: column; // Vertical alignment
+  flex-direction: column; 
   align-items: center;
  
-  background-color: #f3f3f3; // Light Windows-style background
-  border-radius: 10px; // Rounded corners for the container
+  background-color: #f3f3f3; 
+  border-radius: 10px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  padding:1rem;
   min-height:100vh;
@@ -31,8 +31,8 @@
 .image-section img {
   width: 200px;
   height: 200px;
-  border-radius: 50%; // Circular image
-  border: 5px solid #0078d7; // Windows blue border
+  border-radius: 50%; 
+  border: 5px solid #0078d7; 
   object-fit: cover;
 }
 
@@ -40,21 +40,21 @@
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 24px; // Windows-style rounded corners
+  border-radius: 24px; 
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   border: 3px solid #e6e6e6;
 }
 
 .info-section {
   text-align: center;
-  color: #333; // Dark text color
+  color: #333; 
   max-width: 500px;
   font-size: 1.1rem;
   color: #222;
 }
 
 .info-section h1 {
-  color: #0078d7; // Windows blue for the heading
+  color: #0078d7; 
   font-size: 2rem;
   margin-bottom: 1rem;
 }
