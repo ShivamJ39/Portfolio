@@ -31,7 +31,7 @@ export class HeaderComponent {
 
   menuOpen = false;
  
-  isDarkMode = false; // Track dark mode state
+  isDarkMode = false; 
   faMoon = faMoon;
   faSun = faSun;
  
