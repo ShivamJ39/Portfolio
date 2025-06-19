@@ -108,24 +108,24 @@ display: flex
 
 /* Blur Effect */
 .row:hover .project-card {
-  filter: blur(5px); /* Apply blur to all cards */
+  filter: blur(5px);
   transition: filter 0.3s ease;
 }
 
 .row:hover .project-card:hover {
-  filter: none; /* Remove blur from the hovered card */
-  z-index: 2; /* Ensure the hovered card is above the blurred ones */
+  filter: none;
+  z-index: 2;
 }
 @media screen and (max-width: 768px) {
   .row {
-    grid-template-columns: repeat(2, 1fr); // Two columns on smaller screens
+    grid-template-columns: repeat(2, 1fr); 
   }
   
 }
 
 @media screen and (max-width: 480px) {
   .row {
-    grid-template-columns: 1fr; // Single column on very small screens
+    grid-template-columns: 1fr; 
   }
   
 }
