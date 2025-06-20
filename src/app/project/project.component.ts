@@ -18,7 +18,7 @@ export class ProjectComponent {
       image: 'assets/projects/projects.jpg',
       description: 'This is a description for Project 1.',
       link: 'https://shivamj-portfolio.netlify.app',
-      github: 'https://github.com/example/project1'
+      github: 'https://github.com/ShivamJ39/Portfolio.git'
     },
 
 
