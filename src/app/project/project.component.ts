@@ -45,7 +45,7 @@ export class ProjectComponent {
       image: 'assets/projects/projects.jpg',
       description: 'This is a description for Project 2.',
       link: 'https://task-manager-sj.netlify.app',
-      github: 'https://github.com/example/project2'
+      github: 'https://github.com/ShivamJ39/Task-Manager.git'
     },
     {
       name:'Library Management System',
